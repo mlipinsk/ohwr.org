@@ -841,6 +841,10 @@ projects:
     contact:
       name: 'José Gabriel Ramírez'
       email: 'jgabriel@sevensols.com'
+    parents:
+      - 'white-rabbit'
+    compatibles:
+      - 'white-rabbit'
   - id: 'bpm-rffe'
     repository: 'https://ohwr.org/project/bpm-rffe.git'
     contact:
@@ -859,13 +863,23 @@ projects:
   - id: 'ppsi'
     repository: 'https://ohwr.org/project/ppsi.git'
     contact:
-      name: 'Alessandro Rubini'
-      email: 'rubini@gnudd.com'
+      name: 'Adam Wujek'
+      email: 'adam.wujek@cern.ch'
+    parents:
+      - 'white-rabbit'
+      - 'wr-switch-sw'
+      - 'wrpc-sw'
+    compatibles:
+      - 'white-rabbit'
   - id: 'wrpc-sw'
     repository: 'https://ohwr.org/project/wrpc-sw.git'
     contact:
-      name: 'Juan David Gonzalez Cobas'
-      email: 'dcobas@cern.ch'
+      name: 'Tristan Gingold'
+      email: 'tristan.gingold@cern.ch'
+    parents:
+      - 'white-rabbit'
+    compatibles:
+      - 'white-rabbit'
   - id: 'cute-wr'
     repository: 'https://ohwr.org/project/cute-wr.git'
     contact:
@@ -956,16 +970,29 @@ projects:
     contact:
       name: 'Maciej Lipinski'
       email: 'maciej.lipinski@cern.ch'
+    parents:
+      - 'white-rabbit'
+    compatibles:
+      - 'white-rabbit'
   - id: 'wr-cores'
     repository: 'https://ohwr.org/project/wr-cores.git'
     contact:
-      name: 'Tomasz Wlostowski'
-      email: 'tomasz.wlostowski@cern.ch'
+      name: 'Tristan Gingold'
+      email: 'tristan.gingold@cern.ch'
+    parents:
+      - 'white-rabbit'
+    compatibles:
+      - 'white-rabbit'
   - id: 'general-cores'
     repository: 'https://ohwr.org/project/general-cores.git'
     contact:
       name: 'Tomasz Wlostowski'
       email: 'tomasz.wlostowski@cern.ch'
+    parents:
+      - 'white-rabbit'
+      - 'wr-cores'
+    compatibles:
+      - 'white-rabbit'
   - id: 'fmc-mtlu'
     repository: 'https://ohwr.org/project/fmc-mtlu.git'
     contact:
@@ -998,6 +1025,10 @@ projects:
     contact:
       name: 'Adam Wujek'
       email: 'adam.wujek@cern.ch'
+    parents:
+      - 'white-rabbit'
+    compatibles:
+      - 'white-rabbit'
   - id: 'ddr3-sp6-core'
     repository: 'https://ohwr.org/project/ddr3-sp6-core.git'
     contact:
@@ -1008,6 +1039,12 @@ projects:
     contact:
       name: 'Wesley W. Terpstra'
       email: 'w.terpstra@gsi.de'
+    parents:
+      - 'white-rabbit'
+      - 'wr-cores'
+    compatibles:
+      - 'white-rabbit'
+      - 'wr-cores'
   - id: 'conv-ttl-nim-3i-30o'
     repository: 'https://ohwr.org/project/conv-ttl-nim-3i-30o.git'
     contact:
@@ -1045,8 +1082,12 @@ projects:
   - id: 'gn4124-core'
     repository: 'https://ohwr.org/project/gn4124-core.git'
     contact:
-      name: 'Matthieu Cattin'
-      email: 'matthieu.cattin@cern.ch'
+      name: 'Tristan Gingold'
+      email: 'tristan.gingold@cern.ch'
+    parents:
+      - 'white-rabbit'
+    compatibles:
+      - 'white-rabbit'
   - id: 'nanofip-test-board'
     repository: 'https://ohwr.org/project/nanofip-test-board.git'
     contact:
@@ -1057,6 +1098,10 @@ projects:
     contact:
       name: 'Tristan Gingold'
       email: 'tristan.gingold@cern.ch'
+    parents:
+      - 'white-rabbit'
+    compatibles:
+      - 'white-rabbit'
   - id: 'wishbone-gen'
     repository: 'https://ohwr.org/project/wishbone-gen.git'
     contact:
