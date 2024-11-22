@@ -79,9 +79,36 @@ SPDX-License-Identifier: BSD-3-Clause
   </div>
 </div>
 
-{{ range slice (group "Parent" $parents) (group "Child" $children) (group "Compatible" $compatibles) }}
+{{ range slice (group "Parent" $parents) (group "Compatible" $compatibles) }}
 {{ if .Pages }}
 <h3 class="text-center">{{ .Key }} Projects</h3>
+<div class="cards-section">
+  {{ range .Pages }}
+  <div class="card interactive-card border-0 shadow-lg mb-4">
+    {{ if .Params.images }}
+    <div class="row">
+      <div class="col-md-3">
+        <img src="{{ index .Params.images 0 | relURL }}" class="m-3 w-100 mh-100 rounded">
+      </div>
+      <div class="col-md-9 p-0">
+    {{ end }}
+        <div class="card-body">
+          <h4><a href="{{ .Permalink }}" title="{{ .Title }}" class="stretched-link post-title">{{ .Title }}</a></h4>
+          <p class="card-text">{{ .Params.summary }}</p>
+        </div>
+    {{ if .Params.images }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}
+
+{{ range slice (group "Child" $children)  }}
+{{ if .Pages }}
+<h3 class="text-center">Related Projects</h3>
 <div class="cards-section">
   {{ range .Pages }}
   <div class="card interactive-card border-0 shadow-lg mb-4">
