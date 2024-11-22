@@ -154,7 +154,7 @@ projects:
       name: 'Jose Lopez Jimenez'
       email: 'jose.lopez@nav-timing.safrangroup.com'
     parents:
-      - 'wr-switch-hdl'
+      - 'wr-switch-hw'
     categories:
       - 'WR Switch'
       - 'WR Switch v3'
@@ -222,7 +222,7 @@ projects:
       name: 'Aubert Dupont'
       email: 'aubert@stogger.com'
   - id: 'diot-sb-igl'
-    repository: 'https://ohwr.org/project/diot-sb-igl.git'
+    repository: 'https://gitlab.cern.ch/mlipinsk/diot-sb-igl.git'
     contact:
       name: 'Christos Gentsos'
       email: 'christos.gentsos@cern.ch'
@@ -310,7 +310,7 @@ projects:
     parents:
       - 'diot'
   - id: 'diot-sb-zu'
-    repository: 'https://ohwr.org/project/diot-sb-zu.git'
+    repository: 'https://gitlab.cern.ch/mlipinsk/diot-sb-zu.git'
     contact:
       name: 'Adam Wujek'
       email: 'dev_public@wujek.eu'
@@ -372,7 +372,7 @@ projects:
       name: 'Maciej Lipinski'
       email: 'maciej.lipinski@cern.ch'
     parents:
-      - 'white-rabbit'
+      - 'wr-switch-sw'
     categories:
       - 'WR Switch v4'
       - 'WR Switch'
@@ -586,8 +586,6 @@ projects:
     contact:
       name: 'Tristan Gingold'
       email: 'tristan.gingold@cern.ch'
-    parents:
-      - 'white-rabbit'
     categories:
       - 'Software applicable to WR Node'
   - id: 'mock-turtle'
@@ -823,12 +821,12 @@ projects:
     categories:
       - 'FMC Modules'
   - id: 'wr-switch-hw'
-    repository: 'https://ohwr.org/project/wr-switch-hw.git'
+    repository: 'https://gitlab.cern.ch/mlipinsk/wr-switch-hw.git'
     contact:
       name: 'José Gabriel Ramírez'
       email: 'jgabriel@sevensols.com'
     parents:
-      - 'white-rabbit'
+      - 'wr-switch-sw'
     categories:
       - 'WR Switch v3'
   - id: 'bpm-rffe'
@@ -1060,7 +1058,7 @@ projects:
     categories:
       - 'Software applicable to WR Node'
   - id: 'wr-switch-sw'
-    repository: 'https://ohwr.org/project/wr-switch-sw.git'
+    repository: 'https://gitlab.cern.ch/mlipinsk/wr-switch-sw.git'
     contact:
       name: 'Adam Wujek'
       email: 'adam.wujek@cern.ch'
@@ -1074,12 +1072,13 @@ projects:
       name: 'Tristan Gingold'
       email: 'tristan.gingold@cern.ch'
     parents:
-      - 'white-rabbit'
+      - 'wr-switch-sw'
+      - 'wr-cores'
     categories:
       - 'Software applicable to WR Switch'
       - 'Software applicable to WR Node'
   - id: 'wr-cores'
-    repository: 'https://ohwr.org/project/wr-cores.git'
+    repository: 'https://gitlab.cern.ch/mlipinsk/wr-cores.git'
     contact:
       name: 'Tristan Gingold'
       email: 'tristan.gingold@cern.ch'
@@ -1093,8 +1092,6 @@ projects:
     contact:
       name: 'Tomasz Wlostowski'
       email: 'tomasz.wlostowski@cern.ch'
-    parents:
-      - 'white-rabbit'
     categories:
       - 'Gateware applicable to WR Switch'
       - 'Gateware applicable to WR Node'
@@ -1104,6 +1101,6 @@ projects:
       name: 'Maciej Lipinski'
       email: 'maciej.lipinski@cern.ch'
     parents:
-      - 'white-rabbit'
+      - 'wr-switch-sw'
     categories:
       - 'Gateware applicable to WR Switch'
